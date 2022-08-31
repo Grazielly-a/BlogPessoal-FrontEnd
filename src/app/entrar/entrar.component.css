@@ -9,3 +9,11 @@
     background-position: center;
     background-size: cover;
 }
+
+.btn-arredondado{
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+	-ms-border-radius: 50px;
+	border-radius: 50px;
+}
