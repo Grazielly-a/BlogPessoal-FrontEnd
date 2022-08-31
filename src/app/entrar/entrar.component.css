@@ -1,0 +1,11 @@
+.bg{
+    background: #28293E;
+}
+
+#img-bg{
+    background-image: url(../../assets/img/blog-login.png);
+    height: 650px;    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,15 @@
+#img-bg{
+    background-image: url(../../assets/img/blog-cadastro.png);
+    height: 650px;    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: #28293E;
+}
+
+.text{
+    color: #28293E;
+}
