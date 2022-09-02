@@ -14,6 +14,14 @@ h1{
     color: #28293E;
 }
 
+.formulario{
+    max-width: 500px;
+    height: 620px;
+    border: 1px solid #28293E;
+    border-radius: 10px;
+    box-shadow: 1px 10px 20px #28293E;
+}
+
 .btn-arredondado{
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
