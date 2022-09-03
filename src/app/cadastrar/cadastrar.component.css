@@ -1,6 +1,6 @@
 #img-bg{
-    background-image: url(../../assets/img/blog-cadastro.png);
-    height: 650px;    
+    background-image: url(https://i.imgur.com/PYEsIMS.png);
+    height: 670px;    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,15 +11,16 @@ h1{
 }
 
 .text{
-    color: #28293E;
+    color: #28293E;  
+    line-height: 10px; 
 }
 
 .formulario{
     max-width: 500px;
-    height: 620px;
+    height: 560px;
     border: 1px solid #28293E;
     border-radius: 10px;
-    box-shadow: 1px 10px 20px #28293E;
+    box-shadow: 1px 10px 20px #28293E;    
 }
 
 .btn-arredondado{
