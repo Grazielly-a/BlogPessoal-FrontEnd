@@ -1,5 +1,9 @@
 .bg{
-    background: #CAAFAF;
+    background: #d2cbda;
+}
+
+.text{
+    color: #28293E;
 }
 
 ul.social-network{
@@ -15,7 +19,7 @@ ul.social-network li{
 
 .fa{
     font-size: 35pt;
-    color: white;
+    color: #28293E;
     padding: 10px;
 }
 
@@ -28,5 +32,5 @@ ul.social-network li{
 }
 
 .bg-footer{
-    background: #c29898; 
+    background: #c3b5d3; 
 }

@@ -1,6 +1,10 @@
+.bg{
+    background: #eeebf1;
+}
+
 #img-bg{
-    background-image: url(https://i.imgur.com/PYEsIMS.png);
-    height: 670px;    
+    background-image: url(https://i.imgur.com/eTmOkag.png);
+    min-height: 100vh;   
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -12,7 +16,7 @@ h1{
 
 .text{
     color: #28293E;  
-    line-height: 10px; 
+    line-height: 8px; 
 }
 
 .formulario{
@@ -23,10 +27,6 @@ h1{
     box-shadow: 1px 10px 20px #28293E;    
 }
 
-.btn-arredondado{
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	-o-border-radius: 50px;
-	-ms-border-radius: 50px;
+.btn-arredondado{	
 	border-radius: 50px;
 }
