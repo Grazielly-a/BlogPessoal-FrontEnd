@@ -1,0 +1,19 @@
+.bg{
+    background: #d2cbda;
+}
+
+.text{
+    color: #28293E;
+}
+
+.fs-54{
+    font-size: 54pt;
+}
+
+.fs-18{
+    font-size: 18pt;
+}
+
+.btn-arredondado{	
+	border-radius: 50px;
+}   
