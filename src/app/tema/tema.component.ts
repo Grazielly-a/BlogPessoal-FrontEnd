@@ -14,7 +14,8 @@ export class TemaComponent implements OnInit {
   temas: temas = new temas()
   listaTemas: temas[]
 
-  constructor(private router: Router, private temaService: TemaService) { }
+  constructor(private router: Router, 
+    private temaService: TemaService) { }
 
   ngOnInit() {
     if(environment.token == ''){      

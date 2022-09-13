@@ -45,12 +45,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let temas of listaTemas">
-                        <th>{{temas.id}}</th>
-                        <td>{{temas.descricao}}</td>
+                    <tr *ngFor="let item of listaTemas">
+                        <th>{{item.id}}</th>
+                        <td>{{item.descricao}}</td>
                         <td class="d-flex justify-content-end">
-                            <button class="btn btn-outline-info mr-3 btn-arredondado">Editar</button>
-                            <button class="btn btn-outline-danger btn-arredondado">Apagar</button>
+                            <button class="btn btn-outline-info mr-3 btn-arredondado" [routerLink]="['/tema-edit', item.id]">Editar</button>
+                            <button class="btn btn-outline-danger btn-arredondado" [routerLink]="['/tema-delete', item.id]">Apagar</button>
                         </td>                        
                     </tr>                    
                 </tbody>
