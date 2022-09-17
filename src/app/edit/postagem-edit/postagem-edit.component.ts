@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { postagens } from 'src/app/model/postagens';
 import { temas } from 'src/app/model/temas';
+import { AlertasService } from 'src/app/service/alertas.service';
 import { PostagemService } from 'src/app/service/postagem.service';
 import { TemaService } from 'src/app/service/tema.service';
 import { environment } from 'src/environments/environment.prod';
@@ -22,7 +23,8 @@ export class PostagemEditComponent implements OnInit {
   constructor(private router: Router,
     private route: ActivatedRoute,
     private postagensService: PostagemService,
-    private temaService: TemaService) { }
+    private temaService: TemaService,
+    private alertas: AlertasService) { }
 
   ngOnInit() {
     window.scroll(0,0)
@@ -60,7 +62,7 @@ export class PostagemEditComponent implements OnInit {
 
     this.postagensService.putPostagens(this.postagens).subscribe((resp: postagens) =>{
       this.postagens = resp
-      alert('Postagem atualizada com sucesso!')
+      this.alertas.showAlertSuccess('Postagem atualizada com sucesso!')
       this.router.navigate(['/inicio'])
     })
   }

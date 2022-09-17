@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { postagens } from 'src/app/model/postagens';
+import { AlertasService } from 'src/app/service/alertas.service';
 import { PostagemService } from 'src/app/service/postagem.service';
 import { TemaService } from 'src/app/service/tema.service';
 import { environment } from 'src/environments/environment.prod';
@@ -19,7 +20,8 @@ export class PostagemDeleteComponent implements OnInit {
 
   constructor(private router: Router,
     private route: ActivatedRoute,
-    private postagensService: PostagemService) { }
+    private postagensService: PostagemService,
+    private alertas: AlertasService) { }
 
   ngOnInit() {
     window.scroll(0,0)
@@ -40,7 +42,7 @@ export class PostagemDeleteComponent implements OnInit {
 
   apagar() {
     this.postagensService.deletePostagens(this.idPostagens).subscribe(() =>{
-      alert('Postagem apagada com sucesso!')
+      this.alertas.showAlertSuccess('Postagem apagada com sucesso!')
       this.router.navigate(['/inicio'])
     })
   }

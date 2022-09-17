@@ -120,17 +120,17 @@
 
                 <div class="form-group">
                     <label for="titulo">Título</label>
-                    <input [(ngModel)]="postagens.titulo" type="text" class="form-control" id="titulo" placeholder="Digite o título">
+                    <input [(ngModel)]='postagens.titulo' type="text" class="form-control" id="titulo" placeholder="Digite o título">
                 </div>
 
                 <div class="form-group">
                     <label for="texto">Texto</label>
-                    <textarea [(ngModel)]="postagens.texto" class="form-control" name="texto" id="texto" rows="3"></textarea>
+                    <textarea [(ngModel)]='postagens.texto' class="form-control" name="texto" id="texto" rows="3"></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink="/tema">cadastre um novo</a>: </label>
-                    <select [(ngModel)]="idTemas" name="tema" id="tema" class="form-control" (change)="findByIdTemas()">
+                    <select [(ngModel)]='idTemas' name="tema" id="tema" class="form-control" (change)="findByIdTemas()">
                         <option *ngFor='let item of listaTemas' value="{{item.id}}">{{item.descricao}}</option>
                     </select>
                 </div>

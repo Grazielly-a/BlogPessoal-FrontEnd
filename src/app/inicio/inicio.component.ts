@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment.prod';
 import { postagens } from '../model/postagens';
 import { temas } from '../model/temas';
 import { usuario } from '../model/usuario';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
@@ -28,7 +29,8 @@ export class InicioComponent implements OnInit {
   constructor(private router: Router,
     private postagensService: PostagemService,
     private temaService: TemaService,
-    private authService: AuthService) { }
+    private authService: AuthService,
+    private alertas: AlertasService) { }
 
   ngOnInit() {
     window.scroll(0,0)
@@ -74,7 +76,7 @@ export class InicioComponent implements OnInit {
 
     this.postagensService.postPostagens(this.postagens).subscribe((resp: postagens) =>{
       this.postagens = resp
-      alert('Postagem realizada com sucesso!')
+      this.alertas.showAlertSuccess('Postagem realizada com sucesso!')
       this.postagens = new postagens()
       this.getAllPostagens()
     })
