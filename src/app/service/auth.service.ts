@@ -14,15 +14,15 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   entrar(usuarioLogin: usuarioLogin): Observable<usuarioLogin>{
-    return this.http.post<usuarioLogin>('http://localhost:8080/usuarios/logar', usuarioLogin)
+    return this.http.post<usuarioLogin>('https://blogpessoalgrazielly.herokuapp.com/usuarios/logar', usuarioLogin)
   }
 
   cadastrar(usuario: usuario): Observable<usuario> {
-    return this.http.post<usuario>('http://localhost:8080/usuarios/cadastrar', usuario)
+    return this.http.post<usuario>('https://blogpessoalgrazielly.herokuapp.com/usuarios/cadastrar', usuario)
   }
 
   getByIdUsuario(id: number): Observable<usuario> {
-    return this.http.get<usuario>(`http://localhost:8080/usuarios/${id}`)
+    return this.http.get<usuario>(`https://blogpessoalgrazielly.herokuapp.com/usuarios/${id}`)
   }
 
   logado() {
@@ -36,7 +36,7 @@ export class AuthService {
   }
 
   atualizar(usuario: usuario): Observable<usuario>{
-    return this.http.put<usuario>('http://localhost:8080/usuarios/atualizar', usuario)
+    return this.http.put<usuario>('https://blogpessoalgrazielly.herokuapp.com/usuarios/atualizar', usuario)
   }
 
 }
