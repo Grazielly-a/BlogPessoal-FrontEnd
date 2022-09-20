@@ -1,0 +1,15 @@
+.bg{
+    background: #d2cbda;
+}
+
+.text{
+    color: #28293E;
+}
+
+.fs-16{
+    font-size: 16pt;
+}
+
+a{
+    cursor: pointer;
+}

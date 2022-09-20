@@ -1,0 +1,32 @@
+.bg{
+    background: #eeebf1;
+}
+
+#img-bg{
+    background-image: url(https://i.imgur.com/eTmOkag.png);
+    min-height: 100vh;   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: #28293E;
+}
+
+.text{
+    color: #28293E;  
+    line-height: 8px; 
+}
+
+.formulario{
+    max-width: 500px;
+    height: 560px;
+    border: 1px solid #28293E;
+    border-radius: 10px;
+    box-shadow: 1px 10px 20px #28293E;    
+}
+
+.btn-arredondado{	
+	border-radius: 50px;
+}
